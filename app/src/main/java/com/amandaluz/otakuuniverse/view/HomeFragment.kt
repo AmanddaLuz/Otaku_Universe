@@ -8,30 +8,22 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.amandaluz.otakuuniverse.adapter.OptionsAbasAdapter
 import com.amandaluz.otakuuniverse.databinding.FragmentHomeBinding
+import com.amandaluz.otakuuniverse.utils.listOptionsAbas
 import com.amandaluz.otakuuniverse.utils.toast
 
 class HomeFragment : Fragment() {
     lateinit var binding: FragmentHomeBinding
-    private lateinit var listArray: List<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        listArray = listOf(
-            "Mangas",
-            "Animes",
-            "Favoritos",
-            "Votos",
-            "Personagens",
-            "Indicados"
-        )
         loadingRecyclerView()
     }
 
@@ -42,7 +34,7 @@ class HomeFragment : Fragment() {
                 LinearLayoutManager.HORIZONTAL, false
             )
             setHasFixedSize(true)
-            adapter = OptionsAbasAdapter(listArray) {
+            adapter = OptionsAbasAdapter(listOptionsAbas(requireContext())) {
                 toast("Clique das Abas ok")
             }
         }

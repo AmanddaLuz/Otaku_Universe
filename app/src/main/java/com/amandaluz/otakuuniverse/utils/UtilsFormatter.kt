@@ -26,4 +26,4 @@ private fun gsonFormatter(jsonString: String): OptionsAbas {
 fun getGsonFormatter(json: Int, context: Context): OptionsAbas =
     gsonFormatter(setJsonStringFormater(json, context))
 
-fun listOptionsAbas(optionsAbas: OptionsAbas) : List<String> = optionsAbas.optionsAbas
+fun listOptionsAbas(context: Context) : List<String> = getGsonFormatter(R.raw.options_abas, context).options
