@@ -1,4 +1,4 @@
-package com.amandaluz.ui.dialog
+package com.amandaluz.otakuuniverse.view.dialog
 
 import android.app.Dialog
 import android.os.Bundle

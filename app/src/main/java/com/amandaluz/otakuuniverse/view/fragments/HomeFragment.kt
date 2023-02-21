@@ -1,4 +1,4 @@
-package com.amandaluz.otakuuniverse.view
+package com.amandaluz.otakuuniverse.view.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
