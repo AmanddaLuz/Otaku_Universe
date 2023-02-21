@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Otaku Universe</string>
+    <string name="unavailable_feature">Feature Indisponível</string>
+    <string name="fragment">Hello</string>
 </resources>
