@@ -1,6 +1,8 @@
 package com.amandaluz.otakuuniverse.model
 
 data class TopItems(
-    val title : String,
-    val imageUrl : String
+    val name : String?,
+    val nameKanji : String?,
+    val favorites : String?,
+    val imageUrl : String?
     )
