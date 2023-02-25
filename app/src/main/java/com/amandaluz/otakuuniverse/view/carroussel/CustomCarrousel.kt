@@ -34,7 +34,7 @@ class CustomCarrousel(context : Context? , attrs : AttributeSet?) : ViewFlipper(
                     item.name ?: "" ,
                     item.nameKanji ?: "" ,
                     item.favorites ?: "" ,
-                    item.imageUrl ?: ""
+                    item.imageUrl ?: 0
                 )
             )
         }
