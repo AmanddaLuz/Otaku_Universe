@@ -10,11 +10,21 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_abas"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/item_rv_abas"
+            android:layout_height="90dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_rv_abas" />
+
+        <include
+            android:id="@+id/included_categories_layout"
+            layout="@layout/include_layout_default_categories"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_abas"
+            android:layout_width="match_parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

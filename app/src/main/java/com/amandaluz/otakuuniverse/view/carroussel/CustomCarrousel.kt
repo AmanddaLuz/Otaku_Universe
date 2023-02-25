@@ -20,29 +20,29 @@ class CustomCarrousel(context: Context?, attrs: AttributeSet?) : ViewFlipper(con
         this.list = list
     }
 
-    private var itemClickedListener : ((article: TopItems) -> Unit)? = null
+    private var itemClickedListener: ((article: TopItems) -> Unit)? = null
 
-    fun setClick(itemClickedListener: (article: TopItems) -> Unit){
+    fun setClick(itemClickedListener: (article: TopItems) -> Unit) {
         this.itemClickedListener = itemClickedListener
     }
 
-    fun setupCarrousel(){
+    fun setupCarrousel() {
         val flipperList = mutableListOf<Slide>()
         list.forEach { item ->
             flipperList.add(
                 Slide(
-                item.title ?: "",
-                item.imageUrl ?: ""
-            )
+                    item.title ?: "",
+                    item.imageUrl ?: ""
+                )
             )
         }
 
-        val inflater =  context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
         this.setInAnimation(context, android.R.anim.slide_in_left)
         this.setOutAnimation(context, android.R.anim.slide_out_right)
 
-        for( i in flipperList.indices){
+        for (i in flipperList.indices) {
             val view: View = inflater.inflate(R.layout.item_slide, this, false)
 
             val title = view.findViewById<TextView>(R.id.title)
