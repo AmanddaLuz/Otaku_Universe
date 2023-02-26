@@ -35,7 +35,7 @@ class HomeFragment : Fragment() {
             )
             setHasFixedSize(true)
             adapter = OptionsAbasAdapter(listOptionsAbas(requireContext())) {
-                toast("Clique das Abas ok")
+                toast(it)
             }
         }
     }
