@@ -7,15 +7,16 @@
 
     <com.amandaluz.otakuuniverse.view.carroussel.CustomCarrousel
         android:id="@+id/carrousel"
+        android:background="#00FFFFFF"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:autoStart="true"
         android:flipInterval="3000"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".35"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rv_abas"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_abas"
