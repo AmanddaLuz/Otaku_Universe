@@ -8,7 +8,6 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.amandaluz.otakuuniverse.view.categories.fragments.HomeFragment"
-        android:label="HomeFragment"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_mangaFragment"
@@ -17,7 +16,6 @@
     <fragment
         android:id="@+id/mangaFragment"
         android:name="com.amandaluz.otakuuniverse.view.categories.fragments.MangaFragment"
-        android:label="fragment_manga"
         tools:layout="@layout/fragment_manga" />
 
 </navigation>
