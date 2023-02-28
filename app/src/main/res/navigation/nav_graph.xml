@@ -10,6 +10,14 @@
         android:name="com.amandaluz.otakuuniverse.view.categories.fragments.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mangaFragment"
+            app:destination="@id/mangaFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mangaFragment"
+        android:name="com.amandaluz.otakuuniverse.view.categories.fragments.MangaFragment"
+        android:label="fragment_manga"
+        tools:layout="@layout/fragment_manga" />
 
 </navigation>

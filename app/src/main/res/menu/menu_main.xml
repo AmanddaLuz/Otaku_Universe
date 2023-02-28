@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/ic_home_star"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/mangaFragment"
+            android:icon="@drawable/ic_profile"
+            android:title="Perfil" />
+    </group>
+
+    <item android:title="Otaku Options">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/favoritesFragment"
+                    android:icon="@drawable/ic_favorite"
+                    android:title="Favoritos" />
+
+                <item
+                    android:id="@+id/notificationsFragment"
+                    android:icon="@drawable/ic_notifications"
+                    android:title="Notificações" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Other Options">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/configFragment"
+                    android:icon="@drawable/ic_settings"
+                    android:title="Configurações" />
+
+                <item
+                    android:id="@+id/logoutFragment"
+                    android:icon="@drawable/ic_login"
+                    android:title="Sair" />
+            </group>
+        </menu>
+    </item>
+</menu>
