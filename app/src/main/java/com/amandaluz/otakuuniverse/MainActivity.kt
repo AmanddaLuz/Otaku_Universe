@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun toolbar() {
+
         navigationController()
         appBarConfig = AppBarConfiguration(navController.graph, binding.container)
         binding.toolbar.setupWithNavController(navController, appBarConfig)
